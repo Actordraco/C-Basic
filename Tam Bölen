@@ -5,19 +5,18 @@ using namespace std;
 
 int main(){
 	b:
-		char selection;
+	
         int x, i;
     	char e;
     	system("cls");
     	system("color 2");
-    	printf(" ");
-    	printf("                                 powered by ACTORDRACO\n\n\nHerhangi Bir Sayi Giriniz:");
+    	printf("Herhangi Bir Sayi Giriniz:");
     	scanf("%d",&x);
     	for(i=1; i<=x; i++)
         {
-				if(x%i==0)
-				{
-                          printf("%d\n",i);
+		if(x%i==0)
+		{
+                       printf("%d\n",i);
                 }      		
     	}
     	system("color 4");
@@ -25,8 +24,8 @@ int main(){
     	scanf("%d",&e);
                 if(e==1)
     	        {
-    		              goto b;
-		        }
+    		       goto b;
+		}
         }
     	
     
