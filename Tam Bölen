@@ -1,31 +1,37 @@
+#include <locale.h> 
 #include <stdio.h>
 #include <stdlib.h>
-using namespace std;
-
 
 int main(){
 	b:
-	
-        int x, i;
+	int x, i;
     	char e;
+        setlocale(LC_ALL, "Turkish"); 
     	system("cls");
     	system("color 2");
-    	printf("Herhangi Bir Sayi Giriniz:");
+    	printf("\n");
+    	printf("                             ***********************************");
+    	printf("\n                             * Tam Bölen powered by ACTORDRACO *");
+    	printf("\n                             ***********************************");
+    	printf(" \n\n\n	Bir Sayı Giriniz: ");
     	scanf("%d",&x);
+        printf("\n");
     	for(i=1; i<=x; i++)
         {
 		if(x%i==0)
 		{
-                       printf("%d\n",i);
+                          printf("	%d\n",i);
                 }      		
     	}
     	system("color 4");
-    	printf("devam etmek icin 1'e basin: ");
+    	printf("\n\n	___________________________ ");
+    	printf("\n	Devam Etmek İçin 1'e Basın: ");
     	scanf("%d",&e);
                 if(e==1)
     	        {
-    		       goto b;
+    		         goto b;
 		}
         }
     	
     
+
