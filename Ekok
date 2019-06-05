@@ -1,0 +1,40 @@
+#include <locale.h> 
+#include <stdio.h>
+#include <stdlib.h>
+using namespace std;
+
+
+int main(){
+	b:
+	int x, y, i;
+    	char e;
+    	setlocale(LC_ALL, "Turkish"); 
+    	system("cls");
+    	system("color 2");
+        printf("\n");
+    	printf("                             ******************************");
+    	printf("\n                             * EKOK powered by ACTORDRACO *");
+    	printf("\n                             ******************************");
+    	printf(" \n\n\n	Büyük Sayıyı Giriniz: ");
+    	scanf("%d",&x);
+    	printf("	Küçük Sayiyi Giriniz: ");
+    	scanf("%d",&y);
+    	printf("\n");
+    	for(i=1; i<=x*y; i++)
+        {
+		if((x%i==0)&&(y%i==0))
+		{
+                          printf("	%d\n",i);
+                }      		
+    	}
+    	system("color 4");
+    	printf("\n\n	___________________________ ");
+    	printf("\n	Devam Etmek İçin 1'e Basın: ");
+    	scanf("%d",&e);
+                if(e==1)
+    	        {
+    		         goto b;
+		}
+        }
+    	
+    
